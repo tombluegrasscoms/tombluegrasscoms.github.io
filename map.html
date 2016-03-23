@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>VISION Map</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background: #FFF;
+        }
+        #map {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            var customMapType = new google.maps.StyledMapType([{
+                stylers: [{
+                    hue: '#1d9cd6'
+                }, {
+                    visibility: 'simplified'
+                }, {
+                    saturation: 9
+                }, {
+                    weight: 1
+                }]
+            }, {
+                elementType: 'labels',
+                stylers: [{
+                    visibility: 'simplified' },
+                    {color: "#a1a1a2"},
+                    {gamma: 0.4
+                }]
+            }, 
+{
+        featureType: 'road.highway',
+        elementType: 'labels',
+        stylers: [
+          {visibility: 'off'}
+
+        ]
+      },
+
+            {
+                featureType: 'water',
+                stylers: [{
+                    color: '#1d9cd6'},
+                    {gamma: 0.9
+                }]
+            }], {
+                name: 'Custom Style'
+            });
+            var customMapTypeId = 'custom_style';
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 9,
+                scrollwheel: false,
+                draggable: false,
+                center: {
+                    lat: 51.346191,
+                    lng: -1.339169
+                }
+            });
+            map.mapTypes.set(customMapTypeId, customMapType);
+            map.setMapTypeId(customMapTypeId);
+            var image = 'img/map-marker.png';
+            var beachMarker = new google.maps.Marker({
+                position: {
+                    lat: 51.346191,
+                    lng: -1.339169
+                },
+                map: map,
+                icon: image
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVS5_0BPtYLQyWETA6IKn2x2EDqb8Pbwo&signed_in=true&callback=initMap"></script>
+</body>
+
+</html>

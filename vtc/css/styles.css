@@ -1,0 +1,211 @@
+@font-face {
+  font-family: 'Vauxhall-regular';
+  src: url('../Fonts/Vauxhall-Regular.eot');
+  src: url('../Fonts/Vauxhall-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../Fonts/Vauxhall-Regular.woff2') format('woff2'),
+       url('../Fonts/Vauxhall-Regular.woff') format('woff'),
+       url('../Fonts/Vauxhall-Regular.ttf') format('truetype'),
+       url('../Fonts/Vauxhall-Regular.svg#Vauxhall-Regular') format('svg');
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  padding: 0px;
+  margin: 0 auto;
+  font-family: 'Vauxhall-regular';
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+section {
+  position: relative;
+  overflow: hidden !important;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+.blackbg {
+    background: #000;
+}
+.homenations {
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url("../img/hnbg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.football {
+  z-index: 99;
+  position: absolute;
+  left: 335px;
+  margin-top: 480px;
+}
+.imgfootball {
+  max-width: 280px;
+}
+.boot {
+  z-index: 100;
+  position: absolute;
+  top: 0px;
+  left: 15%;
+}
+.imgboot {
+max-width: 400px;
+}
+.shade {
+  z-index: 90;
+  position: absolute;
+  left: 335px;
+  margin-top: 662px;
+}
+.imgshade {
+  max-width: 350px;
+}
+.introbg {
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgba(206,24,30,1);
+  background: -moz-linear-gradient(top, rgba(206,24,30,1) 0%, rgba(66,40,40,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(206,24,30,1)), color-stop(100%, rgba(66,40,40,1)));
+  background: -webkit-linear-gradient(top, rgba(206,24,30,1) 0%, rgba(66,40,40,1) 100%);
+  background: -o-linear-gradient(top, rgba(206,24,30,1) 0%, rgba(66,40,40,1) 100%);
+  background: -ms-linear-gradient(top, rgba(206,24,30,1) 0%, rgba(66,40,40,1) 100%);
+  background: linear-gradient(to bottom, rgba(206,24,30,1) 0%, rgba(66,40,40,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ce181e', endColorstr='#422828', GradientType=0 );
+}
+.infobox {
+  z-index: 200;
+  position: absolute;
+  top: 150px;
+  right: 400px;
+  max-width: 30%;
+  text-align: left;
+  color: #FFF;
+  opacity: 0;
+}
+.infobox h2 {
+  font-size: 5em;
+  letter-spacing: 10px;
+}
+.infobox p {
+  font-size:1em;
+  letter-spacing: 1.5px;
+  line-height: 1.2;
+}
+.bgas {
+  position: relative;
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  max-width: 100%;
+}
+.astra {
+  height: 500vh;
+  overflow: scroll;
+}
+.as1 {background-image: url(../img/astra1.jpg)}
+.as2 {background-image: url(../img/astra2.jpg)}
+.as3 {background-image: url(../img/astra3.jpg)}
+.as4 {background-image: url(../img/astra4.jpg)}
+.as5 {background-image: url(../img/astra5.jpg)}
+.historyintro {
+  position: absolute;
+  bottom: 1vh;
+  right: 5vh;
+  color: #FFF;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  padding: 50px 20px;
+  text-align: center;
+  z-index: 3;
+}
+.redline {
+  width: 600px;
+  border: none;
+  height: 5px;
+  background: #ce181e;
+  margin: 10px auto;
+}
+.historyintro h2 {
+  font-size: 35px;
+}
+.incar {
+  position: absolute;
+  top: 34vh;
+  left: 0px;
+  z-index: 4;
+}
+.outcar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background: url("../img/outcar.png");
+  background-repeat: no-repeat;
+  background-position: 0 40%;
+}
+.ov {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  height: 100vh;
+  width: 100%;
+}
+.sunleft {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+  height: 100vh;
+  width: 100%;
+}
+.year {
+  position: relative;
+  top: 0vh;
+  left: 0%;
+  font-size: 2.5em;
+  color: #FFF;
+  letter-spacing: 4px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 35px;
+  border-right: 2px solid #ce181e;
+  display: inline-block;
+  width: 100px;
+  height: 200px;
+}
+.caption h2 {
+  font-size: 1.2em
+}
+.caption {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  height: 200px;
+  position: relative;
+  top: 16vh;
+  left: 0%;
+  font-size: 1em;
+  color: #FFF;
+  letter-spacing: 1px;
+  text-align: left;
+  padding: 35px;
+}
