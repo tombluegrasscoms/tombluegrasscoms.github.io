@@ -22,6 +22,22 @@ html, body {
   user-select: none;
   background: #FFF;
 }
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.loading {
+  min-width:100%;
+  min-height:100%;
+  height:100%;
+  overflow-y: hidden !important;
+  top:0;
+  left:0;
+  position:fixed;
+  z-index:9999 !important;
+  background: #999;
+}
 .section {
 	clear: both;
 	padding: 0px;
@@ -58,7 +74,6 @@ section {
   padding: 1vh 0px;
   text-align: center;
   overflow: hidden;
-  height: auto !important;
 }
 .pattern {
   z-index: 0;
@@ -72,7 +87,6 @@ section {
   opacity: 0.2 !important;
 }
 .introt {
-  background: rgba(255,255,255,0.3);
   padding 20px;
   margin-top: -10px;
 }
@@ -100,7 +114,7 @@ section {
 }
 #introtext {
   color: #222;
-  width: 55%;
+  width: 65%;
   margin: 0 auto;
   text-align: center;
   font-size: 1.05em;
@@ -131,8 +145,20 @@ section {
 .bunting img {
   max-width: 100%;
   }
+.timelinestart {
+  position: absolute;
+  top: 36vh;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2.5;
+  opacity: 0;
+  color: #444;
+}
 .blackbg {
-    background: #000;
+  background: #000;
 }
 .homenations {
   height: 100vh;
@@ -161,7 +187,7 @@ section {
   left: 15%;
 }
 .imgboot {
-max-width: 400px;
+  max-width: 400px;
 }
 .shade {
   z-index: 90;
@@ -298,6 +324,36 @@ max-width: 400px;
 }
 .parts {
 
+}
+.arrowd {
+  position: absolute;
+  top: 60vh;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+.aranim {
+  -webkit-animation: arrow 1.2s infinite;
+  -moz-animation: arrow 1.2s infinite;
+  -o-animation: arrow 1.2s infinite;
+  animation: arrow 1.2s infinite;
+}
+@-webkit-keyframes arrow {
+  0%   { opacity: 0; margin-top: 130px; }
+  100% { opacity: 1; margin-top: 150px; }
+}
+@-moz-keyframes arrow {
+  0%   { opacity: 0; margin-top: 130px; }
+  100% { opacity: 1; margin-top: 150px; }
+}
+@-o-keyframes arrow {
+  0%   { opacity: 0; margin-top: 130px; }
+  100% { opacity: 1; margin-top: 150px; }
+}
+@keyframes arrow {
+  0%   { opacity: 0; margin-top: 130px; }
+  100% { opacity: 1; margin-top: 150px; }
 }
 @media only screen and (max-width: 1023px) {
 	.col {  margin: 2% 0 2% 0%; }
