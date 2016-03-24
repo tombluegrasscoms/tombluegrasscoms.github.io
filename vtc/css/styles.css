@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Vauxhall-regular';
-  src: url('../Fonts/Vauxhall-Regular.eot');
-  src: url('../Fonts/Vauxhall-Regular.eot?#iefix') format('embedded-opentype'),
-       url('../Fonts/Vauxhall-Regular.woff2') format('woff2'),
-       url('../Fonts/Vauxhall-Regular.woff') format('woff'),
-       url('../Fonts/Vauxhall-Regular.ttf') format('truetype'),
-       url('../Fonts/Vauxhall-Regular.svg#Vauxhall-Regular') format('svg');
+  src: url('../fonts/Vauxhall-Regular.eot');
+  src: url('../fonts/Vauxhall-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Vauxhall-Regular.woff2') format('woff2'),
+       url('../fonts/Vauxhall-Regular.woff') format('woff'),
+       url('../fonts/Vauxhall-Regular.ttf') format('truetype'),
+       url('../fonts/Vauxhall-Regular.svg#Vauxhall-Regular') format('svg');
 }
 html, body {
   width: 100%;
@@ -20,7 +20,32 @@ html, body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  background: #FFF;
 }
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 0.1%;
+}
+.col:first-child { margin-left: 0; }
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; }
+.span_6_of_6 {width: 100%;}
+.span_5_of_6 {width: 83.31%;}
+.span_4_of_6 {width: 66.63%;}
+.span_3_of_6 {width: 49.95%;}
+.span_2_of_6 {width: 33.26%;}
+.span_1_of_6 {width: 14.58%; font-size: 24px; padding: 0px 1%; letter-spacing: 2.2;}
+.left { text-align: left; }
+.right { text-align: right; }
+.center { text-align: center; }
 section {
   position: relative;
   overflow: hidden !important;
@@ -28,6 +53,84 @@ section {
   width: 100%;
   max-width: 100%;
 }
+.slideone {
+  background: #FFF;
+  padding: 1vh 0px;
+  text-align: center;
+  overflow: hidden;
+  height: auto !important;
+}
+.pattern {
+  z-index: 0;
+  width: 100%;
+  height: 150vh;
+  max-width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  opacity: 0.2 !important;
+}
+.introt {
+  background: rgba(255,255,255,0.3);
+  padding 20px;
+  margin-top: -10px;
+}
+.ctabutton {
+  display: inline-block;
+  border: 2px solid #ce181e;
+  padding: 25px 20px 20px 20px;
+  margin: 1em auto;
+  color: #222;
+  font-size: 1em;
+  line-height: 1.1em;
+  -webkit-transition: all 300ms cubic-bezier(0.455, 0.030, 0.000, 1);
+  -webkit-transition: all 300ms cubic-bezier(0.455, 0.030, 0.000, 1.050);
+  -moz-transition: all 300ms cubic-bezier(0.455, 0.030, 0.000, 1.050);
+  -o-transition: all 300ms cubic-bezier(0.455, 0.030, 0.000, 1.050);
+  transition: all 300ms cubic-bezier(0.455, 0.030, 0.000, 1.050);
+}
+.ctabutton:hover {
+  color: #FFF;
+  background: #ce181e;
+  border: 2px solid #FFF;
+}
+.logo {
+  max-width: 18.5%;
+}
+#introtext {
+  color: #222;
+  width: 55%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.05em;
+  line-height: 1.6;
+}
+.para {
+  width: 575px; margin: 0 auto;
+}
+.bpara {
+  color: #ce181e;
+  text-transform: uppercase;
+  letter-spacing: 2;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+.benicon {
+  max-height: 90px;
+}
+.red {
+  color: #ce181e;
+}
+.bunting {
+  position: absolute;
+  left: 0px;
+  max-width: 100%;
+  z-index: 0 !important;
+}
+.bunting img {
+  max-width: 100%;
+  }
 .blackbg {
     background: #000;
 }
@@ -68,22 +171,6 @@ max-width: 400px;
 }
 .imgshade {
   max-width: 350px;
-}
-.introbg {
-  height: 100vh;
-  width: 100%;
-  z-index: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  background: rgba(206,24,30,1);
-  background: -moz-linear-gradient(top, rgba(206,24,30,1) 0%, rgba(66,40,40,1) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(206,24,30,1)), color-stop(100%, rgba(66,40,40,1)));
-  background: -webkit-linear-gradient(top, rgba(206,24,30,1) 0%, rgba(66,40,40,1) 100%);
-  background: -o-linear-gradient(top, rgba(206,24,30,1) 0%, rgba(66,40,40,1) 100%);
-  background: -ms-linear-gradient(top, rgba(206,24,30,1) 0%, rgba(66,40,40,1) 100%);
-  background: linear-gradient(to bottom, rgba(206,24,30,1) 0%, rgba(66,40,40,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ce181e', endColorstr='#422828', GradientType=0 );
 }
 .infobox {
   z-index: 200;
@@ -208,4 +295,15 @@ max-width: 400px;
   letter-spacing: 1px;
   text-align: left;
   padding: 35px;
+}
+.parts {
+
+}
+@media only screen and (max-width: 1023px) {
+	.col {  margin: 2% 0 2% 0%; }
+	.span_1_of_6, .span_2_of_6, .span_3_of_6, .span_4_of_6, .span_5_of_6, .span_6_of_6 { width: 100%; text-align: center; }
+  .para {width: 100%;}
+  #introtext { width: 90%; max-width: 90%;}
+  .logo {max-width: 70%;
+  }
 }

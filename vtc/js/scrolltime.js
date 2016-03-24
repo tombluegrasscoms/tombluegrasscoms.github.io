@@ -1,15 +1,34 @@
+
 initScrollAnimations();
 function initScrollAnimations() {
   var controller = $.superscrollorama();
-  controller.pin($('#introsec'), 800, {
+  controller.pin($('#introsec'), 6000, {
             anim: (new TimelineLite())
             .append(
-            TweenMax.fromTo($('#zoombg'), 1,
-                             {css:{opacity: 1, scaleY:1, scaleX: 1}},
-                             {css:{opacity: 0.6, scaleY:3, scaleX: 3}})
+            TweenMax.fromTo($('#logo'), 1,
+                             {css:{marginTop: 200, scaleX: 1.3, scaleY: 1.3}},
+                             {css:{marginTop: 10, scaleX: 1, scaleY: 1}})
+            )
+            .append(
+            TweenMax.fromTo($('#introtext'), 1,
+                             {css:{opacity: 0, marginTop: 250, scaleX: 1.3, scaleY: 1.3}},
+                             {css:{opacity: 1, marginTop: 50, scaleX: 1, scaleY: 1}}),
+                             -1
+            )
+            .append(
+            TweenMax.fromTo($('#pattern'), 2,
+                             {css:{top: 0}},
+                             {css:{top: -200}}),
+                             -1
+            )
+            .append(
+            TweenMax.fromTo($('#bunting'), 1,
+                             {css:{top: -300}},
+                             {css:{top: -105}}),
+                             -1.1
             )
             })
-  controller.pin($('#hmpin'), 10000, {
+  controller.pin($('#hmpin'), 14000, {
             anim: (new TimelineLite())
             .append(
             TweenMax.fromTo($('#move-it'), 1,
@@ -36,8 +55,8 @@ function initScrollAnimations() {
           )
           .append(
           TweenMax.fromTo($('#infobox'), 1,
-                          {css:{top: 950, opacity: 0, scaleY: 1.1, scaleX: 1.1}, immediateRender:true},
-                          {css:{top: 200, opacity: 1, scaleY: 1, scaleX: 1}}),
+                          {css:{top: 950}, immediateRender:true},
+                          {css:{top: 200}}),
                           -1
           )
           .append(
@@ -61,33 +80,21 @@ function initScrollAnimations() {
                                      -1
                     )
                     .append(
-                    TweenMax.fromTo($('#overlay'), 1,
-                                     {css:{opacity: 0}},
-                                     {css:{opacity: 1}}),
-                                     -1
-                    )
-                    .append(
                     TweenMax.fromTo($('#sunleft'), 1,
                                      {css:{opacity: 1}},
                                      {css:{opacity: 0}}),
                                      -1
                     )
                     .append(
-                    TweenMax.fromTo($('#history1'), 1,
+                    TweenMax.fromTo($('#history1, #overlay'), 1,
                                      {css:{opacity: 0}},
                                      {css:{opacity: 1}}),
                                      -1
                     )
                     .append(
-                    TweenMax.fromTo($('#rline'), 1,
-                                     {css:{width: 0, opacity: 0, marginBottom: 0}},
-                                     {css:{width: 400, opacity: 1, marginBottom: 40}}),
-                                     -1
-                    )
-                    .append(
-                    TweenMax.fromTo($('#rline2'), 1,
-                                     {css:{width: 0, opacity: 0, marginTop: 0}},
-                                     {css:{width: 400, opacity: 1, marginTop: 40}}),
+                    TweenMax.fromTo($('#rline, #rline2'), 1,
+                                     {css:{width: 0, opacity: 0, 'margin':'0px auto'}},
+                                     {css:{width: 400, opacity: 1, 'margin':'40px auto'}}),
                                      -1
                     )
                     .append(
