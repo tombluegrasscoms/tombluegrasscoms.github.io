@@ -298,7 +298,7 @@ function initScrollAnimations() {
                 })
             )
     })
-    controller.pin($('#partssec'), 10000, {
+    controller.pin($('#partssec'), 8400, {
         anim: (new TimelineLite())
             .append(
                 TweenMax.fromTo($('#olay'), 1, {
@@ -482,19 +482,43 @@ function initScrollAnimations() {
                 }), -2.5
             )
     })
-    controller.pin($('#dash'), 3000, {
+    controller.pin($('#dash'), 4500, {
         anim: (new TimelineLite())
             .append(
                 TweenMax.fromTo($('#dial'), 1, {
                     css: {
-                        rotation: 0
+                        rotation: -43
                     }
                 }, {
                     css: {
-                        rotation: 150
+                        rotation: 190
                     }
                 }),
-                1
+                0.4
+            )
+            .append(
+                TweenMax.fromTo($('#dialtext'), 0.5, {
+                    css: {
+                        opacity: 0
+                    }
+                }, {
+                    css: {
+                        opacity: 1
+                    }
+                }),
+                -0.6
+            )
+            .append(
+                TweenMax.fromTo($('#ovva'), 1, {
+                    css: {
+                        opacity: 0.3
+                    }
+                }, {
+                    css: {
+                        opacity: 0.1
+                    }
+                }),
+                -0.6
             )
     })
 }
