@@ -211,8 +211,8 @@ section {
   z-index: 200;
   position: absolute;
   top: 15%;
-  right: 400px;
-  max-width: 35%;
+  right: 85px;
+  max-width: 36.5%;
   text-align: left;
   color: #FFF;
   opacity: 0;
@@ -324,7 +324,7 @@ section {
   width: 350px;
   height: 200px;
   position: relative;
-  top: 16vh;
+  top: 14vh;
   left: 0%;
   font-size: 1em;
   color: #FFF;
@@ -335,16 +335,45 @@ section {
 .parts {
 width: 100%;
 max-width: 100%;
-background: url("../img/no4.jpg");
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center center;
+background: rgba(69,69,69,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(69,69,69,1) 0%, rgba(51,51,51,1) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(69,69,69,1)), color-stop(100%, rgba(51,51,51,1)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(69,69,69,1) 0%, rgba(51,51,51,1) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(69,69,69,1) 0%, rgba(51,51,51,1) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(69,69,69,1) 0%, rgba(51,51,51,1) 100%);
+background: radial-gradient(ellipse at center, rgba(69,69,69,1) 0%, rgba(51,51,51,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#454545', endColorstr='#333333', GradientType=1 );
+}
+.bgrad {
+  position: absolute;
+  z-index: 92 !important;
+  top: 0px;
+  left: 0px;
+  min-width: 100%;
+  height: 100%;
+  background: rgba(248,80,50,0);
+  background: -moz-linear-gradient(top, rgba(248,80,50,0) 0%, rgba(0,0,0,0.9) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(248,80,50,0)), color-stop(100%, rgba(0,0,0,0.9)));
+  background: -webkit-linear-gradient(top, rgba(248,80,50,0) 0%, rgba(0,0,0,0.9) 100%);
+  background: -o-linear-gradient(top, rgba(248,80,50,0) 0%, rgba(0,0,0,0.9) 100%);
+  background: -ms-linear-gradient(top, rgba(248,80,50,0) 0%, rgba(0,0,0,0.9) 100%);
+  background: linear-gradient(to bottom, rgba(248,80,50,0) 0%, rgba(0,0,0,0.9) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#000000', GradientType=0 );
+  opacity: 0.6;
+}
+.allpart {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  max-width: 100%;
+  height: 100vh;
 }
 .parts h1 {
   position: relative;
   max-width: 490px;
-  font-size: 2.5em;
-  margin: 20vh auto 0 auto;
+  font-size: 2.3em;
+  margin: 10vh auto;
   letter-spacing: 90px;
   text-indent: 75px;
   width: 490px;
@@ -352,25 +381,47 @@ background-position: center center;
   color: #FFF;
   padding: 30px 0px;
   border: 2px solid #FFF;
-  z-index: 90 !important;
+  z-index: 93 !important;
   line-height: 45px;
   background: rgba(0,0,0,0.05);
-    border-radius: 1px;
+  border-radius: 1px;
+}
+.ola {
+  position: relative;
+  max-width: 490px;
+  margin: 0 auto;
+  text-align: center;
+  color: #FFF;
+  font-size: 0.8em;
+  letter-spacing: 1.8px;
+  line-height: 1.4;
+  z-index: 93 !important;
+  text-transform: uppercase;
 }
 .olayt {
   position: relative;
-  margin: 5vh auto;
+  margin: 0 auto 10vh auto;
   display: block;
   width: 490px;
-  font-size: 1.4em;
+  font-size: 1.2em;
   padding: 30px 0px;
   border-top: 4px solid #ce181e;
   border-bottom: 4px solid #ce181e;
   color: #FFF;
-  letter-spacing: 6px;
+  letter-spacing: 8px;
   text-indent: 6px;
   text-align: center;
-  z-index: 90 !important;
+  z-index: 93 !important;
+}
+.griff {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 1 !important;
+  opacity: 0.1
 }
 .partcon {
   position: relative;
@@ -380,10 +431,10 @@ background-position: center center;
 }
 .partimg {
   position: absolute;
-  z-index: 12 !important;
+  z-index: 91 !important;
 }
 .partimg img {
-    max-width: 260px;
+max-height: 200px;
 }
 .arrowd {
   position: absolute;
@@ -412,6 +463,18 @@ background-position: center center;
   -moz-animation:elip 1s infinite;
   animation:elip 1s infinite;
   content: "";
+}
+.event5 {
+  background: url("../img/event5.jpg");
+  background-size: 1920px;
+  background-repeat: no-repeat;
+}
+.dial {
+  position: absolute;
+  top: 514px;
+  left: 439px;
+  perspective: -1250px;
+  -webkit-perspective: -1250px;
 }
 @-webkit-keyframes elip {
   0% {content: "."}
