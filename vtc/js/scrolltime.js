@@ -64,23 +64,23 @@ function initScrollAnimations() {
         anim: (new TimelineLite())
             .append(
                 TweenMax.fromTo($('#move-it'), 1, {
-                    css: {left: -900, top: -760, rotation: 110}, immediateRender: true, force3D:true, ease:Quad.easeInOut},
+                    css: {left: -880, top: -760, rotation: 110}, immediateRender: true, force3D:true},
                     {
-                    css: {left: 225, top: -80, rotation: -40}, immediateRender: true, force3D:true, ease:Quad.easeInOut
+                    css: {left: 205, top: -80, rotation: -40}, immediateRender: true, force3D:true
                     })
                     )
             .append(
                 TweenMax.fromTo($('#fling-it'), 1, {
-                    css: {left: 362, rotation: 5, top: -70}, immediateRender: true},
+                    css: {left: 422, rotation: 5, top: -70}, immediateRender: true, force3D:true},
                     {
-                    css: {left: 2550, rotation: -900, top: -540}, immediateRender: true, force3D:true, ease:Quad.easeInOut
-                    }), -0.43
+                    css: {left: 2550, rotation: -900, top: -540}, immediateRender: true, force3D:true
+                  }), -0.38
                     )
             .append(
                 TweenMax.fromTo($('#shade'), 1, {
-                    css: {left: 330, top: -1, scaleX: 1, scaleY: 1, opacity: 0.9}, immediateRender: true, force3D:true, ease:Quad.easeInOut},
+                    css: {left: 390, top: -1, scaleX: 1, scaleY: 1, opacity: 0.9}, immediateRender: true, force3D:true},
                     {
-                    css: {left: 2550, top: 180, scaleX: 0.1, scaleY: 0.1, opacity: 0}, immediateRender: true, force3D:true, ease:Quad.easeInOut
+                    css: {left: 2550, top: 180, scaleX: 0.1, scaleY: 0.1, opacity: 0}, immediateRender: true, force3D:true
                     }), -1
                     )
             .append(

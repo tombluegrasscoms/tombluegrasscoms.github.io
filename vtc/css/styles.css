@@ -292,12 +292,13 @@ section {
   position: absolute;
   top: 10vh;
   left: 7.5vh;
-  color: #ce181e;
+  color: #FFF;
   font-size: 15px;
   letter-spacing: 1.5px;
   padding: 50px 20px;
   text-align: center;
   z-index: 3;
+  text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
 }
 .redline {
   width: 600px;
