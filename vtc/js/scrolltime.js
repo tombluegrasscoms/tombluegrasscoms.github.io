@@ -26,7 +26,7 @@ function initScrollAnimations() {
                     )
             .append(
                 TweenMax.fromTo($('#pattern'), 4, {
-                    css: {top: 0}, immediateRender: true, force3D:true, ease:Quad.easeInOut},
+                    css: {top: 4}, immediateRender: true, force3D:true, ease:Quad.easeInOut},
                     {
                     css: {top: -130}, immediateRender: true, force3D:true, ease:Quad.easeInOut
                     }), -1
