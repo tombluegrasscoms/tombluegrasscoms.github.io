@@ -170,7 +170,7 @@ function initScrollAnimations() {
                 TweenMax.fromTo($('#ola'), 1, {
                     css: {top: -80, opacity: 0, 'line-height': '20px'}, immediateRender: true, force3D:true, ease:Quad.easeInOut},
                     {
-                    css: {top: -60, opacity: 1, 'line-height': '25px'}, immediateRender: true, force3D:true, ease:Quad.easeInOut
+                    css: {top: -40, opacity: 1, 'line-height': '25px'}, immediateRender: true, force3D:true, ease:Quad.easeInOut
                     }), 0.4
                     )
             .append(
