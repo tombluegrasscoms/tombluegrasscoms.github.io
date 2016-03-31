@@ -303,7 +303,7 @@ function initScrollAnimations() {
             .append(
                 TweenMax.fromTo($('#olay'), 1, {
                     css: {
-                        'line-height': '4',
+                        'line-height': '8',
                         opacity: 0
                     }
                 }, {
