@@ -8,7 +8,6 @@
 <!-- L O A D I N G -->
 <div class="loading" id="loading"><span class="spinner-text"><strong>LOADING</strong></span>
 <!--PATTERNBG--><div class="pattern"><img src="img/pattern2.png" /></div></div>
-
 <section id="introsec" class="slideone">
 <!--PATTERNBG--><div class="pattern" id="pattern"><img src="img/pattern.png" /></div>
 <!--BUNTING-->
@@ -113,40 +112,30 @@ Nunc interdum, velit id faucibus blandit, justo ante eleifend nibh, vitae mollis
 <div class="caption"><h2>Vauxhall Astra</h2><br />
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Cras lobortis est purus, eget placerat nulla facilisis at.
-Morbi tellus nulla, efficitur non sapien sed, vulputate faucibus metus.
-Mauris sem diam, congue id lacus tristique, ullamcorper posuere massa.
 </div></div>
 <div class="bgas as2">
 <div class="year">1998</div>
 <div class="caption"><h2>Vauxhall Astra</h2><br />
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Cras lobortis est purus, eget placerat nulla facilisis at.
-Morbi tellus nulla, efficitur non sapien sed, vulputate faucibus metus.
-Mauris sem diam, congue id lacus tristique, ullamcorper posuere massa.
 </div></div>
 <div class="bgas as3">
 <div class="year">2005</div>
 <div class="caption"><h2>Vauxhall Astra</h2><br />
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Cras lobortis est purus, eget placerat nulla facilisis at.
-Morbi tellus nulla, efficitur non sapien sed, vulputate faucibus metus.
-Mauris sem diam, congue id lacus tristique, ullamcorper posuere massa.
 </div></div>
 <div class="bgas as4">
 <div class="year">2010</div>
 <div class="caption"><h2>Vauxhall Astra</h2><br />
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Cras lobortis est purus, eget placerat nulla facilisis at.
-Morbi tellus nulla, efficitur non sapien sed, vulputate faucibus metus.
-Mauris sem diam, congue id lacus tristique, ullamcorper posuere massa.
 </div></div>
 <div class="bgas as5">
 <div class="year">2015</div>
 <div class="caption"><h2>Vauxhall Astra</h2><br />
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Cras lobortis est purus, eget placerat nulla facilisis at.
-Morbi tellus nulla, efficitur non sapien sed, vulputate faucibus metus.
-Mauris sem diam, congue id lacus tristique, ullamcorper posuere massa.
 </div></div>
 </section>
 
@@ -173,12 +162,9 @@ Mauris sem diam, congue id lacus tristique, ullamcorper posuere massa.
   <div class="partimg" id="part5"><img src="img/parts/part5.png" /></div>
   <div class="partimg" id="part6"><img src="img/parts/part6.png" /></div>
   <div class="partimg" id="part7"><img src="img/parts/part7.png" /></div>
-  <div class="partimg" id="part8"><img src="img/parts/part8.png" /></div>
 </div>
 </div>
 </section>
-
-
 <section id="dash"><div class="ovv" id="ovva">&nbsp;</div>
   <div class="event5">
   <img src="img/event5.jpg" />
@@ -192,7 +178,6 @@ Mauris sem diam, congue id lacus tristique, ullamcorper posuere massa.
   </div>
 <img src="img/dial.png" class="dial" id="dial" />
 </section>
-
 <section></section>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.2/TweenMax.min.js"></script>
@@ -200,10 +185,10 @@ Mauris sem diam, congue id lacus tristique, ullamcorper posuere massa.
 <script src="js/scrolltime.js"></script>
 <script>
 $(document).ready(function() {
-   window.setTimeout("fadeMyDiv();", 1000); //call fade in 3 seconds
+   window.setTimeout("loading();", 1000); //call fade in 3 seconds
  }
 )
-function fadeMyDiv() {
+function loading() {
    $("#loading").fadeOut('slow');
 }
 $(window).load(function(){

@@ -41,7 +41,7 @@ html, body {
 }
 h3 {
   color: #FFF;
-  font-size: 1.3em;
+  font-size: 1.1em;
   margin: -25px 0px 20px 0px;
   letter-spacing: 3;
   padding-bottom: 20px;
@@ -79,7 +79,7 @@ h3 {
 .span_4_of_6 {width: 66.63%;}
 .span_3_of_6 {width: 49.95%;}
 .span_2_of_6 {width: 33.26%;}
-.span_1_of_6 {width: 14.58%; font-size: 24px; padding: 0px 1%; letter-spacing: 2.2;}
+.span_1_of_6 {width: 14.58%; font-size: 21px; padding: 0px 1%; letter-spacing: 2.2;}
 .left { text-align: left; }
 .right { text-align: right; }
 .center { text-align: center; }
@@ -102,7 +102,7 @@ section {
   height: 150vh;
   max-width: 100%;
   margin: 0 auto;
-  position: fixed;
+  position: absolute;
   top: 0px;
   left: 0px;
   opacity: 0.2 !important;
@@ -117,7 +117,7 @@ section {
   padding: 25px 20px 20px 20px;
   margin: 1em auto;
   color: #222;
-  font-size: 1em;
+  font-size: 0.9em;
   line-height: 1.1em;
   -webkit-transition: all 300ms cubic-bezier(0.455, 0.030, 0.000, 1);
   -webkit-transition: all 300ms cubic-bezier(0.455, 0.030, 0.000, 1.050);
@@ -138,7 +138,7 @@ section {
   width: 75%;
   margin: 0 auto;
   text-align: center;
-  font-size: 1.05em;
+  font-size: 1em;
   line-height: 1.6;
 }
 .para {
@@ -148,7 +148,7 @@ section {
   color: #ce181e;
   text-transform: uppercase;
   letter-spacing: 2;
-  font-size: 1.1em;
+  font-size: 1em;
   margin-bottom: 20px;
 }
 .benicon {
@@ -172,7 +172,7 @@ section {
   display: block;
   width: 100%;
   margin: 0 auto;
-  font-size: 25px;
+  font-size: 22px;
   text-transform: uppercase;
   letter-spacing: 2.5;
   opacity: 0;
@@ -223,19 +223,19 @@ section {
   z-index: 200;
   position: absolute;
   top: 15%;
-  right: 85px;
+  right: 105px;
   max-width: 36.5%;
   text-align: left;
   color: #FFF;
   opacity: 0;
 }
 .infobox h2 {
-  font-size: 5em;
+  font-size: 4.5em;
   letter-spacing: 20px;
   text-indent: 5px;
 }
 .infobox p {
-  font-size: 0.9em;
+  font-size: 0.85em;
   letter-spacing: 1px;
   line-height: 1.2;
 }
@@ -252,16 +252,16 @@ section {
   height: 500vh;
   overflow: scroll;
 }
-.as1 {background-image: url(../img/astra1.jpg)}
-.as2 {background-image: url(../img/astra2.jpg)}
-.as3 {background-image: url(../img/astra3.jpg)}
-.as4 {background-image: url(../img/astra4.jpg)}
-.as5 {background-image: url(../img/astra5.jpg)}
+.as1 {z-index: 90 !important; background-image: url(../img/astra1.jpg)}
+.as2 {z-index: 90 !important; background-image: url(../img/astra2.jpg)}
+.as3 {z-index: 90 !important; background-image: url(../img/astra3.jpg)}
+.as4 {z-index: 90 !important; background-image: url(../img/astra4.jpg)}
+.as5 {z-index: 90 !important; background-image: url(../img/astra5.jpg)}
 .historyintro {
   position: absolute;
-  bottom: 1vh;
-  right: 5vh;
-  color: #FFF;
+  top: 10vh;
+  left: 7.5vh;
+  color: #ce181e;
   font-size: 15px;
   letter-spacing: 1.5px;
   padding: 50px 20px;
@@ -272,11 +272,11 @@ section {
   width: 600px;
   border: none;
   height: 5px;
-  background: #ce181e;
+  background: #FFF;
   margin: 10px auto;
 }
 .historyintro h2 {
-  font-size: 35px;
+  font-size: 27px;
 }
 .incar {
   position: absolute;
@@ -316,7 +316,7 @@ section {
   position: relative;
   top: 0vh;
   left: 0%;
-  font-size: 2.5em;
+  font-size: 2.2em;
   color: #FFF;
   letter-spacing: 4px;
   margin: 0 auto;
@@ -328,7 +328,7 @@ section {
   height: 200px;
 }
 .caption h2 {
-  font-size: 1.2em
+  font-size: 1.1em
 }
 .caption {
   position: relative;
@@ -338,7 +338,7 @@ section {
   position: relative;
   top: 14vh;
   left: 0%;
-  font-size: 1em;
+  font-size: 0.85em;
   color: #FFF;
   letter-spacing: 1px;
   text-align: left;
@@ -391,7 +391,7 @@ section {
   width: 490px;
   text-align: center;
   color: #FFF;
-  padding: 30px 0px;
+  padding: 20px 0px;
   border: 3px solid #FFF;
   z-index: 93 !important;
   line-height: 45px;
@@ -415,8 +415,8 @@ section {
   margin: 0 auto 10vh auto;
   display: block;
   width: 490px;
-  font-size: 1.2em;
-  padding: 30px 0px;
+  font-size: 1.1em;
+  padding: 20px 0px;
   border-top: 3px solid #ce181e;
   border-bottom: 3px solid #ce181e;
   color: #FFF;
@@ -575,6 +575,5 @@ section {
 	.span_1_of_6, .span_2_of_6, .span_3_of_6, .span_4_of_6, .span_5_of_6, .span_6_of_6 { width: 100%; text-align: center; }
   .para {width: 100%;}
   #introtext { width: 90%; max-width: 90%;}
-  .logo {max-width: 70%;
-  }
+  .logo {max-width: 70%;}
 }
