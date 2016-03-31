@@ -136,9 +136,7 @@ section {
   position: absolute;
   left: 0px;
   opacity: 0.2 !important;
-}
-.pattern img {
-  max-width: 100%;
+  overflow-x: hidden !important;
 }
 .introt {
   padding: 20px;
@@ -496,9 +494,10 @@ section {
   animation: arrow 1.2s infinite;
 }
 .spinner-text {
-  position:fixed;top:41.5%;
+  position:fixed;
+  top:41.5%;
   left:45%;
-  margin:16px 0 0 35px;
+  margin:16px auto;
   font-size:24px;
   color:#ce181e;
   letter-spacing:1.5px;
