@@ -5,16 +5,7 @@
 <title>25 Years Vauxhall Trade Club</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>
-$(document).ready(function() {
-   window.setTimeout("loading();", 1000); //call fade in 3 seconds
- }
-)
-function loading() {
-   $("#loading, .pace").fadeOut('slow');
-}
-$(window).load(function(){
-   $("body").css("opacity","1");
-});
+function loading(){$("#loading, .pace").fadeOut("slow")}$(document).ready(function(){window.setTimeout("loading();",1e3)}),$(window).load(function(){$("body").css("opacity","1")});
 </script>
 <link href='css/styles.css' rel='stylesheet' type='text/css'>
 </head>
@@ -22,7 +13,6 @@ $(window).load(function(){
 <!-- L O A D I N G -->
 <div class="loading" id="loading"><span class="spinner-text"><strong>LOADING</strong></span></div>
 <!--PATTERNBG--><div class="pattern"><img src="img/pattern2.png" /></div></div>
-
 <section id="introsec" class="slideone">
 <!--PATTERNBG--><div class="pattern" id="pattern"><img src="img/pattern.png" /></div>
 <!--BUNTING-->
@@ -177,20 +167,57 @@ Mauris sem diam, congue id lacus tristique, ullamcorper posuere massa.
 </div>
 </div>
 </section>
-<section id="dash"><div class="ovv" id="ovva">&nbsp;</div>
-  <div class="event5">
-  <img src="img/event5.jpg" />
+
+
+<section id="dash" class="dbg">
+
+
+  <div class="dashgriff">
+    <img src="img/dashgriff2.png" />
   </div>
-  <div class="dialtext" id="dialtext">
+
+  <div id="dashgriff" class="dashgriff">
+    <img src="img/dashgriff.png" />
+  </div>
+
+    <div class="dialtext" id="dialtext">
     <span class="white"><strong>1991-2016</strong></span><br /><br />
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Cras lobortis est purus, eget placerat nulla facilisis at.
-    Morbi tellus nulla, efficitur non sapien sed, vulputate faucibus metus.
-    Mauris sem diam, congue id lacus tristique, ullamcorper posuere massa.
-  </div>
-<img src="img/dial.png" class="dial" id="dial" />
+    Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit.<br />
+    Cras lobortis est purus, eget<br /> placerat nulla facilisis at.
+    </div>
+<div class="speedo">
+  <img src="img/speedometer.png" />
+</div>
+
+
+<div class="dial">
+  <img src="img/dial.png" id="dial" />
+</div>
+
+<div class="dialci">
+  <img src="img/dialcircle.png" id="dialci" />
+</div>
+
 </section>
-<section></section>
+
+
+
+
+<section id="outro" class="outro">
+<div class="outcontainer">
+  <table width="400px" align="center">
+    <tr>
+    <td>
+    <img src="img/outrologo.png" />
+    </td>
+    <td>
+    <h2>Celebrating<br />25<br />Years</h2>
+    </td>
+    </tr>
+  </table>
+</div>
+</section>
+
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.2/TweenMax.min.js"></script>
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53257/jquery.superscrollorama.js"></script>
 <script src="js/scrolltime.js"></script>

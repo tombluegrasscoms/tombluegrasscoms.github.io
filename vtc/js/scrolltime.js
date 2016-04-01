@@ -230,28 +230,35 @@ function initScrollAnimations() {
                     }), -1.4
                     )
                     })
-    controller.pin($('#dash'), 4500, {
+    controller.pin($('#dash'), 6000, {
         anim: (new TimelineLite())
             .append(
                 TweenMax.fromTo($('#dial'), 1, {
-                    css: {rotation: -43}, immediateRender: true, force3D:true, ease:Quad.easeInOut},
+                    css: {rotation: -4}, immediateRender: true, force3D:true, ease:Quad.easeInOut},
                     {
-                    css: {rotation: 190}, immediateRender: true, force3D:true, ease:Quad.easeInOut
+                    css: {rotation: 178}, immediateRender: true, force3D:true, ease:Quad.easeInOut
                     }), 0.4
                     )
+                    .append(
+                        TweenMax.fromTo($('#dialci'), 1, {
+                            css: {rotation: -4}, immediateRender: true, force3D:true, ease:Quad.easeInOut},
+                            {
+                            css: {rotation: 178}, immediateRender: true, force3D:true, ease:Quad.easeInOut
+                          }), -1
+                            )
+                    .append(
+                        TweenMax.fromTo($('#dashgriff'), 1, {
+                            css: {opacity: 0}, immediateRender: true, force3D:true},
+                            {
+                            css: {opacity: 1}, immediateRender: true, force3D:true
+                          }), -0.8
+                            )
             .append(
                 TweenMax.fromTo($('#dialtext'), 0.5, {
                     css: {opacity: 0}, immediateRender: true, force3D:true, ease:Quad.easeInOut},
                     {
                     css: {opacity: 1}, immediateRender: true, force3D:true, ease:Quad.easeInOut
-                    }), -0.6
-                    )
-            .append(
-                TweenMax.fromTo($('#ovva'), 1, {
-                    css: {opacity: 0.3}, immediateRender: true, force3D:true, ease:Quad.easeInOut},
-                    {
-                    css: {opacity: 0.1}, immediateRender: true, force3D:true, ease:Quad.easeInOut
-                    }), -0.6
+                  }), -0.4
                     )
                     })
                     }
