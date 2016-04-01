@@ -234,16 +234,16 @@ function initScrollAnimations() {
         anim: (new TimelineLite())
             .append(
                 TweenMax.fromTo($('#dial'), 1, {
-                    css: {rotation: -4}, immediateRender: true, force3D:true, ease:Quad.easeInOut},
+                    css: {rotation: -5}, immediateRender: true, force3D:true, ease:Quad.easeInOut},
                     {
-                    css: {rotation: 178}, immediateRender: true, force3D:true, ease:Quad.easeInOut
+                    css: {rotation: 184}, immediateRender: true, force3D:true, ease:Quad.easeInOut
                     }), 0.4
                     )
                     .append(
                         TweenMax.fromTo($('#dialci'), 1, {
-                            css: {rotation: -4}, immediateRender: true, force3D:true, ease:Quad.easeInOut},
+                            css: {rotation: -5}, immediateRender: true, force3D:true, ease:Quad.easeInOut},
                             {
-                            css: {rotation: 178}, immediateRender: true, force3D:true, ease:Quad.easeInOut
+                            css: {rotation: 184}, immediateRender: true, force3D:true, ease:Quad.easeInOut
                           }), -1
                             )
                     .append(
