@@ -1,7 +1,7 @@
 initScrollAnimations();
 function initScrollAnimations() {
     var controller = $.superscrollorama();
-    controller.pin($('#introsec'), 9000, {
+    controller.pin($('#introsec'), 5000, {
         anim: (new TimelineLite())
             .append(
                 TweenMax.fromTo($('#logo'), 1, {
@@ -60,7 +60,7 @@ function initScrollAnimations() {
                     }), -1.9
                     )
                     })
-    controller.pin($('#hmpin'), 7000, {
+    controller.pin($('#hmpin'), 3600, {
         anim: (new TimelineLite())
             .append(
                 TweenMax.fromTo($('#move-it'), 1, {
@@ -105,7 +105,7 @@ function initScrollAnimations() {
                     }), 0.5
                     )
                     })
-    controller.pin($('#his'), 2500, {
+    controller.pin($('#his'), 2300, {
         anim: (new TimelineLite())
             .append(
                 TweenMax.fromTo($('#incar'), 1, {
@@ -150,7 +150,7 @@ function initScrollAnimations() {
                     })
                     )
                     })
-    controller.pin($('#partssec'), 7400, {
+    controller.pin($('#partssec'), 4300, {
         anim: (new TimelineLite())
             .append(
                 TweenMax.fromTo($('#olay'), 1, {

@@ -9,16 +9,6 @@
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-    font-family: 'digital_dreamregular';
-    src: url('../fonts/DIGITALDREAM-webfont.eot');
-    src: url('../fonts/DIGITALDREAM-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/DIGITALDREAM-webfont.woff') format('woff'),
-         url('../fonts/DIGITALDREAM-webfont.ttf') format('truetype'),
-         url('../fonts/DIGITALDREAM-webfont.svg#digital_dreamregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
 html, body {
   width: 100%;
   height: 100%;
@@ -32,7 +22,6 @@ html, body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background: #FFF;
 }
 * {
 	-webkit-box-sizing: border-box;
@@ -606,7 +595,7 @@ background-position: 0% 65%;
   text-align: center;
   margin: 0 auto;
   color: #ededed;
-  font-size: 15px;
+  font-size: 12px;
   letter-spacing: 1px;
   line-height: 1.7;
   text-align: center;
@@ -679,9 +668,25 @@ background-position: 0% 65%;
   100% { opacity: 1; margin-top: 150px; }
 }
 @media only screen and (max-width: 1023px) {
-	.col {  margin: 2% 0 2% 0%; }
-	.span_1_of_6, .span_2_of_6, .span_3_of_6, .span_4_of_6, .span_5_of_6, .span_6_of_6 { width: 100%; text-align: center; }
-  .para { width: 100%; }
-  #introtext { width: 90%; max-width: 90%; }
-  .logo { max-width: 70%; }
+	.col {
+    margin: 2% 0 2% 0%;
+  }
+	.span_1_of_6,
+  .span_2_of_6,
+  .span_3_of_6,
+  .span_4_of_6,
+  .span_5_of_6,
+  .span_6_of_6 {
+    width: 100%; text-align: center;
+  }
+  .para {
+    width: 100%;
+  }
+  #introtext {
+    width: 90%;
+    max-width: 90%;
+  }
+  .logo {
+    max-width: 70%;
+  }
 }
