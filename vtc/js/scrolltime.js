@@ -59,6 +59,13 @@ function initScrollAnimations() {
                     css: {opacity: 1, marginTop: 0, scaleX: 1, scaleY: 1}, immediateRender: true, force3D:true, ease:Quad.easeInOut
                     }), -1.9
                     )
+                    .append(
+                        TweenMax.fromTo($('#navv'), 1, {
+                            css: {right: -200}, immediateRender: true, force3D:true, ease:Quad.easeInOut},
+                            {
+                            css: {right: 0}, immediateRender: true, force3D:true, ease:Quad.easeInOut
+                          }), -2
+                            )
                     })
     controller.pin($('#hmpin'), 3600, {
         anim: (new TimelineLite())
@@ -230,7 +237,7 @@ function initScrollAnimations() {
                     }), -1.4
                     )
                     })
-    controller.pin($('#dash'), 6000, {
+    controller.pin($('#dash'), 3500, {
         anim: (new TimelineLite())
             .append(
                 TweenMax.fromTo($('#dial'), 1, {
@@ -258,7 +265,7 @@ function initScrollAnimations() {
                     css: {opacity: 0}, immediateRender: true, force3D:true, ease:Quad.easeInOut},
                     {
                     css: {opacity: 1}, immediateRender: true, force3D:true, ease:Quad.easeInOut
-                  }), -0.4
+                  }), -0.6
                     )
                     })
                     }

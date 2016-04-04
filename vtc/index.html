@@ -9,10 +9,24 @@ function loading(){$("#loading, .pace").fadeOut("slow")}$(document).ready(functi
 </script>
 <link href='css/styles.css' rel='stylesheet' type='text/css'>
 </head>
-<body>
-<!-- L O A D I N G -->
+<body class="smooth">
+
+<!-- LOADING -->
 <div class="loading" id="loading"><span class="spinner-text"><strong>LOADING</strong></span></div>
+
 <!--PATTERNBG--><div class="pattern"><img src="img/pattern2.png" /></div></div>
+
+<!-- SIDE NAV -->
+<nav class="page-navigation" id="navv">
+<ul class="menu">
+    <li class="current"><a href="#introsec"><img src="img/navicons/navintro.png" /></a></li>
+    <li><a href="#hmpin"><img src="img/navicons/navball.png" /></a></li>
+    <li><a href="#his"><img src="img/navicons/navastra.png" /></a></li>
+    <li><a href="#partssec"><img src="img/navicons/navparts.png" /></a></li>
+    <li><a href="#dash"><img src="img/navicons/navdash.png" /></a></li>
+  </ul>
+</nav>
+
 <section id="introsec" class="slideone">
 <!--PATTERNBG--><div class="pattern" id="pattern"><img src="img/pattern.png" /></div>
 <!--BUNTING-->
@@ -202,11 +216,24 @@ Mauris sem diam, congue id lacus tristique, ullamcorper posuere massa.
     <h2>Celebrating<br />25<br />Years</h2>
     </td>
     </tr>
+    <tr>
+      <td colspan="2" class="white">
+        <br /><br />
+        <div class="ctabutton white">GO BACK TO SITE</div>
+      </td>
+    </tr>
   </table>
 </div>
 </section>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.2/TweenMax.min.js"></script>
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53257/jquery.superscrollorama.js"></script>
 <script src="js/scrolltime.js"></script>
+<script src="js/jquery.combinedScroll.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+  $.localScroll({ duration:2050, });
+  $('.page-navigation').onePageNav();
+});
+</script>
 </body>
 </html>
