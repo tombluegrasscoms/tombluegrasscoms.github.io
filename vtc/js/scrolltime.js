@@ -1,7 +1,7 @@
 initScrollAnimations();
 function initScrollAnimations() {
     var controller = $.superscrollorama();
-    controller.pin($('#introsec'), 5000, {
+    controller.pin($('#introtop'), 5000, {
         anim: (new TimelineLite())
             .append(
                 TweenMax.fromTo($('#logo'), 1, {
@@ -64,10 +64,10 @@ function initScrollAnimations() {
                             css: {right: -200}, immediateRender: true, force3D:true, ease:Quad.easeInOut},
                             {
                             css: {right: 0}, immediateRender: true, force3D:true, ease:Quad.easeInOut
-                          }), -2
+                          }), -2.6
                             )
                     })
-    controller.pin($('#hmpin'), 3600, {
+    controller.pin($('#homenationsfootball'), 3600, {
         anim: (new TimelineLite())
             .append(
                 TweenMax.fromTo($('#move-it'), 1, {
@@ -112,7 +112,7 @@ function initScrollAnimations() {
                     }), 0.5
                     )
                     })
-    controller.pin($('#his'), 2300, {
+    controller.pin($('#astrahistory'), 2300, {
         anim: (new TimelineLite())
             .append(
                 TweenMax.fromTo($('#incar'), 1, {
@@ -136,7 +136,7 @@ function initScrollAnimations() {
                     }), -1
                     )
             .append(
-                TweenMax.fromTo($('#history1, #overlay'), 1, {
+                TweenMax.fromTo($('#astrahistorytory1, #overlay'), 1, {
                     css: {opacity: 0}, immediateRender: true, force3D:true, ease:Quad.easeInOut},
                     {
                     css: {opacity: 1}, immediateRender: true, force3D:true, ease:Quad.easeInOut
@@ -157,7 +157,7 @@ function initScrollAnimations() {
                     })
                     )
                     })
-    controller.pin($('#partssec'), 4300, {
+    controller.pin($('#partsadded'), 3000, {
         anim: (new TimelineLite())
             .append(
                 TweenMax.fromTo($('#olay'), 1, {
@@ -237,7 +237,7 @@ function initScrollAnimations() {
                     }), -1.4
                     )
                     })
-    controller.pin($('#dash'), 3500, {
+    controller.pin($('#dashboarduser'), 3500, {
         anim: (new TimelineLite())
             .append(
                 TweenMax.fromTo($('#dial'), 1, {
