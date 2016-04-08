@@ -28,7 +28,11 @@ html, body {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-
+a, a:visited {
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
 h3 {
   color: #FFF;
   font-size: 1.1em;
@@ -125,7 +129,7 @@ section {
   margin: 0 auto;
   position: absolute;
   left: 0px;
-  opacity: 0.2 !important;
+  opacity: 0.1 !important;
   overflow-x: hidden !important;
 }
 .outro {
@@ -366,9 +370,9 @@ background-position: 0% 65%;
   position: relative;
   top: 0vh;
   left: 0%;
-  font-size: 2.2em;
+  font-size: 1.7em;
   color: #FFF;
-  letter-spacing: 4px;
+  letter-spacing: 1px;
   margin: 0 auto;
   text-align: center;
   padding: 35px;
@@ -378,13 +382,13 @@ background-position: 0% 65%;
   height: 200px;
 }
 .caption h2 {
-  font-size: 1.1em
+  font-size: 1em
 }
 .caption {
   position: relative;
   display: inline-block;
-  width: 350px;
-  height: 200px;
+  width: 750px;
+  height: 600px;
   position: relative;
   top: 14vh;
   left: 0%;
@@ -575,6 +579,7 @@ background-position: 0% 65%;
   margin: 0 auto;
   text-align: center;
   z-index: 9 !important;
+  opacity: 0.9;
 }
 .dialci img {
   text-align: center;
