@@ -941,6 +941,16 @@ input[type="checkbox"]:checked + label:before {
   -webkit-animation-delay: 1.35s;
   animation-delay: 1.35s;
 }
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
 @-webkit-keyframes zoom{0%{transform: scale(1.07); -webkit-transform: scale(1.07); -moz-transform: scale(1.07); -o-transform: scale(1.07); opacity: 0.05;}100%{transform: scale(1); -webkit-transform: scale(1); -moz-transform: scale(1); -o-transform: scale(1); opacity: 1;}}@-moz-keyframes zoom{0%{transform: scale(1.07); -webkit-transform: scale(1.07); -moz-transform: scale(1.07); -o-transform: scale(1.07); opacity: 0.05;}100%{transform: scale(1); -webkit-transform: scale(1); -moz-transform: scale(1); -o-transform: scale(1); opacity: 1;}}@-o-keyframes zoom{0%{transform: scale(1.07); -webkit-transform: scale(1.07); -moz-transform: scale(1.07); -o-transform: scale(1.07); opacity: 0.05;}100%{transform: scale(1); -webkit-transform: scale(1); -moz-transform: scale(1); -o-transform: scale(1); opacity: 1;}}@keyframes zoom{0%{transform: scale(1.07); -webkit-transform: scale(1.07); -moz-transform: scale(1.07); -o-transform: scale(1.07); opacity: 0.05;}100%{transform: scale(1); -webkit-transform: scale(1); -moz-transform: scale(1); -o-transform: scale(1); opacity: 1;}}
 @media only screen and (min-width: 1023px) {
 .menuoverlayg {display: none;}
