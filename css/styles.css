@@ -563,10 +563,10 @@ nav li:hover, nav a:hover {color: #acacac; opacity: 1; cursor: pointer;}
 .mobilenav {
   	position: fixed;
   	top: 0px;
-  	left: -300px;
+  	left: -270px;
   	background: #FFF;
   	z-index: 9999;
-  	width: 300px;
+  	width: 270px;
   	height: 100%;
   	margin: 0 auto;
   	transition: all 0.3s ease-in-out;
