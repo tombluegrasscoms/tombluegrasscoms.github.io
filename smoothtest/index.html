@@ -18,14 +18,14 @@ body {
 }
 .plx {
   background-attachment: fixed;
-  background-position: 50% -300%;
+  background-position: 50% 0;
   background-repeat: no-repeat;
   line-height: 450px;
   position: relative;
   background-size: cover;
 }
 .bg1 {
-  background-image: url(parallax.png);
+  background-image: url(plx1.jpg);
   height: 550px;
 }
 .bg2 {
@@ -51,10 +51,10 @@ section {
 section h1 {
   position: relative;
   color: #5e5d62;
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   text-align: center;
   margin: 0 auto 25px auto;
 }
@@ -62,8 +62,8 @@ section p {
   position: relative;
   margin: 0px auto;
   width: 50%;
-  color: #5f5788;
-  font-size: 16px;
+  color: #817d94;
+  font-size: 14px;
   font-weight: 300;
   line-height: 29px;
   letter-spacing: 1px;
@@ -89,7 +89,7 @@ section p {
 </div>
 <section>
 
-<h1>Header 1</h1>
+<h1>this is the first header</h1>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Phasellus nec velit hendrerit, mattis risus vitae, ultricies massa.
@@ -102,7 +102,7 @@ Nulla placerat neque sed augue congue, cursus efficitur nisl rhoncus.
 Nullam dapibus ex eget nulla molestie, eget interdum odio varius.
 </p>
 <br /><br /><br /><br /><br /><br />
-<h1>Header 2</h1>
+<h1>This is the second header</h1>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Phasellus nec velit hendrerit, mattis risus vitae, ultricies massa.
@@ -119,13 +119,22 @@ Nullam dapibus ex eget nulla molestie, eget interdum odio varius.
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js"></script>
+<script src="./detectmobilebrowser.js"></script>
 <script>
 $(function () {
         $.stellar({
             horizontalScrolling: false,
-            verticalOffset: 40
+            verticalOffset: 150,
         });
     });
+    if(jQuery.browser.mobile)
+    {
+        stellarActivated = false;
+    }
+    else
+    {
+        stellarActivated = true;
+    }
 </script>
 </body>
 </html>
