@@ -20,16 +20,17 @@ body {
   font-weight: 300;
 }
 .plx {
+  width: 100%;
   background-attachment: fixed;
-  background-position: 50% 0;
+  background-position: 50% -500px;
   background-repeat: no-repeat;
-  line-height: 450px;
+  line-height: 260px;
   position: relative;
   background-size: cover;
 }
 .bg1 {
   background-image: url(plx1.jpg);
-  height: 550px;
+  height: 520px;
 }
 .bg2 {
   background-image: url(http://www.mrwallpaper.com/wallpapers/Nissan-350Z-Modified-1920x1080.jpg);
@@ -38,8 +39,8 @@ body {
 .plx h1 {
   font-weight: 300;
   text-transform: uppercase;
-  letter-spacing: 4px;
-  font-size: 21px;
+  letter-spacing: 8px;
+  font-size: 24px;
   text-align: center;
   color: #FFF;
   position: absolute;
@@ -48,12 +49,12 @@ body {
 section {
   position: relative;
   padding: 150px 0px;
-  background: #FFF;
+  background: #17161b;
   margin: 0 auto;
 }
 section h1 {
   position: relative;
-  color: #5e5d62;
+  color: #FFF;
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
@@ -65,7 +66,7 @@ section p {
   position: relative;
   margin: 0px auto;
   width: 50%;
-  color: #817d94;
+  color: #b6c2d2;
   font-size: 14px;
   font-weight: 300;
   line-height: 29px;
@@ -77,18 +78,24 @@ section p {
   section {
     padding: 50px 0px;
   }
+  .plx {
+    line-height: 100px;
+  }
+  .plx h1 {
+    font-size: 14px;
+  }
   .bg1 {
     height: 300px;
-    line-height: 260px;
     background-position: 50% 0px;
   }
-  section p {
+  section p, section h1 {
     width: 90%;
+      text-align: left;
   }
 }
 </style>
 <div class="plx bg1" data-stellar-background-ratio="0.5">
-<h1 data-stellar-ratio="0.3">Some Smoooth Parallax</h1>
+<h1 data-stellar-ratio="0.2" class="title">Some Smoooth Parallax</h1>
 </div>
 <section>
 
@@ -106,6 +113,19 @@ Nullam dapibus ex eget nulla molestie, eget interdum odio varius.
 </p>
 <br /><br /><br /><br /><br /><br />
 <h1>This is the second header</h1>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Phasellus nec velit hendrerit, mattis risus vitae, ultricies massa.
+Donec id enim hendrerit purus volutpat ultrices.
+Aenean ante risus, dictum id imperdiet ac, imperdiet a neque.
+In vel orci iaculis ipsum cursus viverra.
+Pellentesque sed vehicula erat, nec ullamcorper magna.
+Nam a dolor fringilla, aliquet arcu ac, viverra odio.
+Nulla placerat neque sed augue congue, cursus efficitur nisl rhoncus.
+Nullam dapibus ex eget nulla molestie, eget interdum odio varius.
+</p>
+<br /><br /><br /><br /><br /><br />
+<h1>This is the third header</h1>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Phasellus nec velit hendrerit, mattis risus vitae, ultricies massa.
@@ -147,5 +167,15 @@ $(function(){
     });
 });
 </script>
+<!--<script>
+var target = $('.title');
+var targetHeight = target.outerHeight();
+$(document).scroll(function(e){
+    var scrollPercent = (targetHeight - window.scrollY) / targetHeight;
+    if(scrollPercent >= 0){
+        target.css('opacity', scrollPercent);
+    }
+});
+</script>-->
 </body>
 </html>
