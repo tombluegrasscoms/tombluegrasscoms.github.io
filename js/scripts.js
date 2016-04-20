@@ -60,15 +60,27 @@ enquire.register("screen and (min-width: 1023px)", {
         })();
     }
 });
-enquire.register("screen and (min-width: 1023px)", {
-    match: function() {
-        $(window).scroll(function() {
-            $(".fadeinmenu").css("opacity", 0 + $(window).scrollTop() / 205);
-        });
-    },
-    unmatch: function() {
-        $(window).scroll(function() {
-            $(".fadeinmenu").css("opacity", 1 + $(window).scrollTop() / 0);
-        });
+var mainbottom = $('h3').offset().top + $('h3').height();
+$(window).on('scroll',function(){
+    var stop = Math.round($(window).scrollTop());
+    if (stop > mainbottom) {
+        $('nav').addClass('navbg');
+    } else {
+        $('nav').removeClass('navbg');
+        $('nav').addClass('navop');
     }
 });
+(function() {
+    var header = document.querySelector("#hidenav");
+    if(window.location.hash) {
+      header.classList.add("headroom--unpinned");
+    }
+    var headroom = new Headroom(header, {
+        tolerance: {
+          down : 10,
+          up : 20
+        },
+        offset :900
+    });
+    headroom.init();
+}());
