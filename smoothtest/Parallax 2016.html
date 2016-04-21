@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parallax 2016</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+    <meta name="theme-color" content="#5f5788" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <script src="detectmobilebrowser.js"></script>
+  </head>
+<body>
+<style type="text/css">
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+font-family: 'Arimo', sans-serif;
+  font-weight: 300;
+  background: #17161b;
+  background: #FFF;
+}
+.plx {
+  width: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  line-height: 70px;
+  position: relative;
+  z-index: 1 !important;
+}
+.bg1 {
+  background-image: url(bg.png);
+  height: 750px;
+  background-position: center center;
+  background-size: cover;
+}
+.bg2 {
+  background-image: url(bg2.png);
+  height: 850px;
+  background-position: 50% 50%;
+  margin-top: -5%;
+}
+.title {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 140px;
+  height: 500px;
+}
+.plx img {
+  max-width: 75px;
+  margin-bottom: 0px;
+}
+.plx h1 {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 4.5px;
+  font-size: 19px;
+  text-align: center;
+  color: #FFF;
+  position: absolute;
+  width: 100%;
+}
+section {
+  position: relative;
+  padding: 90px 0px;
+  margin: 0 auto;
+  z-index: 500 !important;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: initial;
+  margin-top: -5%;
+}
+section .skew:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -10%;
+  overflow: visible;
+  width: 100%;
+  height: 120%;
+  background: #1d1c20;
+  z-index: -1;
+  -webkit-transform: skewY(-7deg);
+  -moz-transform: skewY(-7deg);
+  -ms-transform: skewY(-7deg);
+  -o-transform: skewY(-7deg);
+  transform: skewY(-7deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: initial;
+}
+section h1 {
+  position: relative;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  margin: 0 auto 25px auto;
+}
+section p {
+  position: relative;
+  margin: 0px auto;
+  width: 50%;
+  color: #b6c2d2;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 29px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 0 auto 25px auto;
+}
+.city {
+  padding: 40px;
+  font-weight: 900;
+  font-size: 150px;
+  text-align: center;
+  overflow: visible;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.sd {
+  background-image: url('bg.png');
+  background-size: cover;
+}
+.limit {
+  width: 760px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-size: 270px;
+  line-height: .78em;
+  text-align: left;
+}
+@media all and (max-width: 640px) {
+  section {
+    padding: 25px 0px;
+  }
+  .plx {
+    line-height: 50px;
+  }
+  .title {
+      padding-top: 95px;
+  }
+  .plx h1 {
+    font-size: 14px;
+  }
+  .bg1 {
+    height: 500px;
+    background-position: 58% 0%;
+  }
+  .bg2 {
+    height: 800px;
+    background-position: 60% 0%;
+  }
+  section p, section h1 {
+    width: 90%;
+      text-align: left;
+  }
+}
+</style>
+<div class="plx bg1" data-stellar-background-ratio="0.4">
+<div class="title">
+<img src="bear.svg" />
+<h1>
+  Some Smoooth Parallax
+</h1>
+</div>
+</div>
+
+<section>
+<div class="skew">
+<h1>this is the first header</h1>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Phasellus nec velit hendrerit, mattis risus vitae, ultricies massa.
+Donec id enim hendrerit purus volutpat ultrices.
+Aenean ante risus, dictum id imperdiet ac, imperdiet a neque.
+In vel orci iaculis ipsum cursus viverra.
+Pellentesque sed vehicula erat, nec ullamcorper magna.
+Nam a dolor fringilla, aliquet arcu ac, viverra odio.
+Nulla placerat neque sed augue congue, cursus efficitur nisl rhoncus.
+Nullam dapibus ex eget nulla molestie, eget interdum odio varius.
+</p>
+<br /><br /><br /><br /><br /><br />
+<h1>This is the second header</h1>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Phasellus nec velit hendrerit, mattis risus vitae, ultricies massa.
+Donec id enim hendrerit purus volutpat ultrices.
+Aenean ante risus, dictum id imperdiet ac, imperdiet a neque.
+In vel orci iaculis ipsum cursus viverra.
+Pellentesque sed vehicula erat, nec ullamcorper magna.
+Nam a dolor fringilla, aliquet arcu ac, viverra odio.
+Nulla placerat neque sed augue congue, cursus efficitur nisl rhoncus.
+Nullam dapibus ex eget nulla molestie, eget interdum odio varius.
+</p>
+</div>
+</section>
+<div class="plx bg2" data-stellar-background-ratio="0.4"></div>
+<section>
+<div class="skew">
+<h1>this is the first header</h1>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Phasellus nec velit hendrerit, mattis risus vitae, ultricies massa.
+Donec id enim hendrerit purus volutpat ultrices.
+Aenean ante risus, dictum id imperdiet ac, imperdiet a neque.
+In vel orci iaculis ipsum cursus viverra.
+Pellentesque sed vehicula erat, nec ullamcorper magna.
+Nam a dolor fringilla, aliquet arcu ac, viverra odio.
+Nulla placerat neque sed augue congue, cursus efficitur nisl rhoncus.
+Nullam dapibus ex eget nulla molestie, eget interdum odio varius.
+</p>
+<br /><br /><br /><br /><br /><br />
+<h1>This is the second header</h1>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Phasellus nec velit hendrerit, mattis risus vitae, ultricies massa.
+Donec id enim hendrerit purus volutpat ultrices.
+Aenean ante risus, dictum id imperdiet ac, imperdiet a neque.
+In vel orci iaculis ipsum cursus viverra.
+Pellentesque sed vehicula erat, nec ullamcorper magna.
+Nam a dolor fringilla, aliquet arcu ac, viverra odio.
+Nulla placerat neque sed augue congue, cursus efficitur nisl rhoncus.
+Nullam dapibus ex eget nulla molestie, eget interdum odio varius.
+</p>
+</div>
+</section>
+<section>
+<div class="skew">
+<div class="city sd limit" data-stellar-background-ratio="0.4">
+  BEARALLAX
+</div>
+</div>
+</section>
+
+<script>
+var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
+if( !isMobile.any() )
+$(function(){
+    $.stellar({
+    horizontalScrolling: false,
+    verticalOffset: 150
+    });
+});
+</script>
+<script>
+var target = $('.title');
+var targetHeight = target.outerHeight();
+$(document).scroll(function(e){
+    var scrollPercent = (targetHeight - window.scrollY) / targetHeight;
+    if(scrollPercent >= 0){
+        target.css('opacity', scrollPercent);
+    }
+});
+</script>
+</body>
+</html>

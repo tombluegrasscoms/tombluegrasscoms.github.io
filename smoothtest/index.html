@@ -3,10 +3,11 @@
   <head>
     <title>Parallax 2016</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
-    <meta name="msapplication-TileColor" content="#5f5788">
+    <link href='https://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+    <meta name="theme-color" content="#5f5788" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <script src="detectmobilebrowser.js"></script>
   </head>
 <body>
@@ -16,32 +17,54 @@
   padding: 0;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+font-family: 'Arimo', sans-serif;
   font-weight: 300;
   background: #17161b;
+  background: #FFF;
 }
 .plx {
   width: 100%;
   background-attachment: fixed;
-  background-position: 50% -500px;
   background-repeat: no-repeat;
-  line-height: 260px;
+  line-height: 70px;
   position: relative;
-  background-size: cover;
+  z-index: 1 !important;
 }
 .bg1 {
-  background-image: url(plx1.jpg);
-  height: 520px;
+  background-image: url(bg.png);
+  height: 750px;
+  background-position: center center;
+  background-size: cover;
 }
 .bg2 {
-  background-image: url(http://www.mrwallpaper.com/wallpapers/Nissan-350Z-Modified-1920x1080.jpg);
-    height: 275px;
+  background-image: url(bg2.png);
+  height: 850px;
+  background-position: 50% 50%;
+  margin-top: -5%;
+}
+.bg4 {
+  background-image: url(bg4.png);
+  height: 850px;
+  background-position: 50% 50%;
+  margin-top: -5%;
+}
+.title {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 140px;
+  height: 500px;
+}
+.plx img {
+  max-width: 75px;
+  margin-bottom: 0px;
 }
 .plx h1 {
   font-weight: 300;
   text-transform: uppercase;
-  letter-spacing: 8px;
-  font-size: 24px;
+  letter-spacing: 4.5px;
+  font-size: 19px;
   text-align: center;
   color: #FFF;
   position: absolute;
@@ -49,17 +72,40 @@ body {
 }
 section {
   position: relative;
-  padding: 150px 0px;
-  background: #17161b;
+  padding: 90px 0px;
   margin: 0 auto;
+  z-index: 500 !important;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: initial;
+}
+.sskew {
+    margin-top: -5%;
+}
+section .skew:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -10%;
+  overflow: visible;
+  width: 100%;
+  height: 120%;
+  background: #1d1c20;
+  z-index: -1;
+  -webkit-transform: skewY(-7deg);
+  -moz-transform: skewY(-7deg);
+  -ms-transform: skewY(-7deg);
+  -o-transform: skewY(-7deg);
+  transform: skewY(-7deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: initial;
 }
 section h1 {
   position: relative;
   color: #FFF;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   text-align: center;
   margin: 0 auto 25px auto;
 }
@@ -75,19 +121,48 @@ section p {
   text-align: center;
   margin: 0 auto 25px auto;
 }
+.city {
+  position: relative;
+  font-weight: 700;
+  font-size: 15vw;
+  text-align: center;
+  overflow: visible;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.sd {
+  background-image: url('bg3.png');
+  background-size: cover;
+}
+.limit {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-size: 15vw;
+  text-align: center;
+}
 @media all and (max-width: 640px) {
   section {
-    padding: 50px 0px;
+    padding: 25px 0px;
   }
   .plx {
-    line-height: 100px;
+    line-height: 50px;
+  }
+  .title {
+      padding-top: 95px;
   }
   .plx h1 {
     font-size: 14px;
   }
   .bg1 {
-    height: 300px;
-    background-position: 50% 0px;
+    height: 500px;
+    background-position: 58% 0%;
+  }
+  .bg2 {
+    height: 800px;
+    background-position: 60% 0%;
   }
   section p, section h1 {
     width: 90%;
@@ -95,11 +170,17 @@ section p {
   }
 }
 </style>
-<div class="plx bg1" data-stellar-background-ratio="0.5">
-<h1 data-stellar-ratio="0.2" class="title">Some Smoooth Parallax</h1>
+<div class="plx bg1" data-stellar-background-ratio="0.4">
+<div class="title">
+<img src="bear.svg" />
+<h1>
+  Some Smoooth Parallax
+</h1>
 </div>
-<section>
+</div>
 
+<section class="sskew">
+<div class="skew">
 <h1>this is the first header</h1>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -125,8 +206,12 @@ Nam a dolor fringilla, aliquet arcu ac, viverra odio.
 Nulla placerat neque sed augue congue, cursus efficitur nisl rhoncus.
 Nullam dapibus ex eget nulla molestie, eget interdum odio varius.
 </p>
-<br /><br /><br /><br /><br /><br />
-<h1>This is the third header</h1>
+</div>
+</section>
+<div class="plx bg2" data-stellar-background-ratio="0.4"></div>
+<section class="sskew">
+<div class="skew">
+<h1>this is the first header</h1>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Phasellus nec velit hendrerit, mattis risus vitae, ultricies massa.
@@ -138,7 +223,31 @@ Nam a dolor fringilla, aliquet arcu ac, viverra odio.
 Nulla placerat neque sed augue congue, cursus efficitur nisl rhoncus.
 Nullam dapibus ex eget nulla molestie, eget interdum odio varius.
 </p>
+<br /><br /><br /><br /><br /><br />
+<h1>This is the second header</h1>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Phasellus nec velit hendrerit, mattis risus vitae, ultricies massa.
+Donec id enim hendrerit purus volutpat ultrices.
+Aenean ante risus, dictum id imperdiet ac, imperdiet a neque.
+In vel orci iaculis ipsum cursus viverra.
+Pellentesque sed vehicula erat, nec ullamcorper magna.
+Nam a dolor fringilla, aliquet arcu ac, viverra odio.
+Nulla placerat neque sed augue congue, cursus efficitur nisl rhoncus.
+Nullam dapibus ex eget nulla molestie, eget interdum odio varius.
+</p>
+</div>
 </section>
+
+<section>
+<div class="skew">
+<div class="city sd limit" data-stellar-background-ratio="0.8">
+  BEARALLAX
+</div>
+</div>
+</section>
+<div class="plx bg4" data-stellar-background-ratio="0.4" data-stellar-vertical-offset="350"></div>
+
 <script>
 var isMobile = {
     Android: function() {
@@ -168,7 +277,7 @@ $(function(){
     });
 });
 </script>
-<!--<script>
+<script>
 var target = $('.title');
 var targetHeight = target.outerHeight();
 $(document).scroll(function(e){
@@ -177,6 +286,6 @@ $(document).scroll(function(e){
         target.css('opacity', scrollPercent);
     }
 });
-</script>-->
+</script>
 </body>
 </html>
