@@ -33,14 +33,18 @@ body {
   background-position: 50% 50%;
   margin-top: -5%;
 }
-.title {
+.titlewrap {
   position: absolute;
   width: 100%;
+  max-width: 100%;
+  overflow-x: hidden !important;
+  top: 25%;
+  height: 190px;
+}
+.title {
   margin: 0 auto;
   text-align: center;
-  top: 25%;
   padding-top: 10px;
-  height: 190px;
   animation: titlea 1.8s cubic-bezier(0.785, 0.135, 0.150, 0.860);
   -webkit-animation: titlea 1.8s cubic-bezier(0.785, 0.135, 0.150, 0.860);
   -moz-animation: titlea 1.8s cubic-bezier(0.785, 0.135, 0.150, 0.860);
@@ -119,24 +123,33 @@ section p {
 .bear {
   position: relative;
   font-weight: 700;
-  font-size: 15vw;
+  font-size: 14vw;
   text-align: center;
   overflow: visible;
   padding-bottom: 35px;
   text-transform: uppercase;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  overflow: hidden;
+  max-width: 95%;
+  margin: 0 auto;
 }
 .al {
   background-image: url('../img/bg3.png');
   background-size: cover;
+  overflow: hidden;
 }
 .lax {
-  width: 100%;
+  overflow: hidden;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  font-size: 15vw;
+  font-size: 14vw;
+  transform: rotate(-7deg);
+  -webkit-transform: rotate(-7deg);
+  -ms-transform: rotate(-7deg);
+  -moz-transform: rotate(-7deg);
+  -o-transform: rotate(-7deg);
   text-align: center;
 }
 @keyframes titlea {
