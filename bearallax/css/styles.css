@@ -197,6 +197,14 @@ section p {
   text-transform: uppercase;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
+  -o-background-clip: text;
+  -o-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
   overflow: hidden;
   max-width: 95%;
   margin: 0 auto;
