@@ -18,7 +18,6 @@ var isMobile = {
         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
     }
 };
-
 if( !isMobile.any() )
 $(function(){
     $.stellar({
@@ -26,7 +25,6 @@ $(function(){
     verticalOffset: 150
     });
 });
-if( !isMobile.any() )
 var target = $('.titlewrap');
 var targetHeight = target.outerHeight();
 $(document).scroll(function(e){
