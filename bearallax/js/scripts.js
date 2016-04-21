@@ -11,14 +11,11 @@ var isMobile = {
     Opera: function() {
         return navigator.userAgent.match(/Opera Mini/i);
     },
-    Safari: function() {
-        return navigator.userAgent.match(/Safari/i);
-    },
     Windows: function() {
         return navigator.userAgent.match(/IEMobile/i);
     },
     any: function() {
-        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Safari() || isMobile.Windows());
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
     }
 };
 if( !isMobile.any() )
