@@ -41,6 +41,14 @@ body {
   top: 25%;
   padding-top: 10px;
   height: 190px;
+  animation: titlea 1.8s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+  -webkit-animation: titlea 1.8s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+  -moz-animation: titlea 1.8s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+  -o-animation: titlea 1.8s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
 }
 .plx img {
   max-width: 75px;
@@ -130,6 +138,30 @@ section p {
   background-size: cover;
   font-size: 15vw;
   text-align: center;
+}
+@keyframes titlea {
+  0% {opacity: 0;}
+  30% { opacity: 0; transform: scale(1.4);}
+  70% { opacity: 0.8; transform: scale(0.95);}
+  99% { opacity: 1; transform: scale(1);}
+}
+-webkit-keyframes titlea {
+  0% {opacity: 0;}
+  30% { opacity: 0; transform: scale(1.4);}
+  70% { opacity: 0.8; transform: scale(0.95);}
+  99% { opacity: 1; transform: scale(1);}
+}
+-moz-keyframes titlea {
+  0% {opacity: 0;}
+  30% { opacity: 0; transform: scale(1.4);}
+  70% { opacity: 0.8; transform: scale(0.95);}
+  99% { opacity: 1; transform: scale(1);}
+}
+-o-keyframes titlea {
+  0% {opacity: 0;}
+  30% { opacity: 0; transform: scale(1.4);}
+  70% { opacity: 0.8; transform: scale(0.95);}
+  99% { opacity: 1; transform: scale(1);}
 }
 @media all and (max-width: 640px) {
   section {
