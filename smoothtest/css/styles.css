@@ -3,7 +3,7 @@
   padding: 0;
 }
 body {
-  font-family: 'Noto Serif', serif;
+  font-family: 'Roboto Slab', serif;
   font-weight: 300;
   background: #1d1c20;
 }
@@ -32,6 +32,15 @@ body {
   height: 850px;
   background-position: 50% 50%;
   margin-top: -5%;
+}
+hr {
+  border: none;
+  background: rgba(255,255,255,0.7);
+  max-width: 25%;
+  position: relative;
+  margin: 30px auto;
+  height: 2px;
+  border-radius: 1px;
 }
 .titlewrap {
   position: absolute;
@@ -112,7 +121,7 @@ section p {
   position: relative;
   margin: 0px auto;
   width: 50%;
-  color: #b6c2d2;
+  color: #cdd6e2;
   font-size: 14px;
   font-weight: 300;
   line-height: 29px;
@@ -198,5 +207,10 @@ section p {
   section p, section h1 {
     width: 90%;
       text-align: left;
+  }
+  hr {
+    max-width: 75%;
+    height: 1px;
+    margin: 30px 5%;
   }
 }

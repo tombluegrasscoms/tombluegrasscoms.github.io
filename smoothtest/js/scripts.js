@@ -25,7 +25,7 @@ $(function(){
     verticalOffset: 150
     });
 });
-var target = $('.title');
+var target = $('.titlewrap');
 var targetHeight = target.outerHeight();
 $(document).scroll(function(e){
     var scrollPercent = (targetHeight - window.scrollY) / targetHeight;
