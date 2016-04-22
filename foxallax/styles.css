@@ -471,7 +471,7 @@ p {
     width: 100%;
     transition: all 0.5s ease-in-out;
   }
-  .menu {top: 2.5%; right: 5%;}
+  .menu {top: 2.5% !important; right: 5% !important;}
   .illuright {right: 20%; top: 40%;}
   button {font-size: 14px;}
   nav ul {font-size: 14px; margin: 5px auto;}
