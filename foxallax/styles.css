@@ -10,7 +10,7 @@ body {
 section {
   position: relative;
   background: transparent;
-  padding: 175px 0px;
+  padding: 250px 0px;
   max-width: 100%;
   width: 100%;
   z-index: 500;
@@ -136,6 +136,9 @@ border-bottom: 2px solid #515647;
   min-height: 600px;
   background: transparent;
   z-index: 1;
+}
+.fox3 {
+  height: 700px;
 }
 .head {
   height: 700px;
@@ -294,12 +297,54 @@ p {
 .fadeout {
   opacity: 0;
 }
+
+
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0 auto;
+}
+.col {
+	display: block;
+	float:left;
+	margin: 0.15% 0 0.15% 0.3%;
+}
+.col:first-child { margin-left: 0; }
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; }
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66%; }
+.span_1_of_3 {
+  width: 33.1%;
+  background: #ededed;
+  transition: all 0.2s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+  overflow: hidden;
+  cursor: pointer;
+  background: #000;
+}
+.span_1_of_3 img {
+  position: relative;
+  margin: 0 auto;
+  min-width: 100%;
+  transition: all 0.6s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+  z-index: 100 !important;
+}
+.span_1_of_3 img:hover {
+  opacity: 0.5;
+  transform: scale(1.05);
+}
+
 @keyframes intro {
   0%{ opacity: 0; transform: scale(1.1); margin-top: 20px;}
   40%{ opacity: 0; transform: scale(0.95); margin-top: 20px;}
   100% { opacity: 1; transform: scale(1); margin-top: 0px;}
 }
 @media all and (max-width: 840px) {
+  .col {  margin: 2% 0 2% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+  .span_1_of_3 {height: 350px;}
   section { width: 100%; padding: 75px 0px;}
   p, .sectionwrap {max-width: 90%;}
   .parallax-width: {min-height: 400px;}
