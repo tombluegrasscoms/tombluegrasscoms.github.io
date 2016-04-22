@@ -85,7 +85,7 @@ nav li:hover {
 .item1:hover:after, .item2:hover:after, .item3:hover:after, .item4:hover:after {
   opacity: 1;
   margin-left: 20px;
-  color: #515647 !important;
+  color: #daa156 !important;
 }
 .parent:hover li {
   opacity: 0.2;
@@ -98,12 +98,13 @@ nav li:hover {
 }
 .parent:hover li:hover {
   opacity: 1;
+  color: #daa156;
   border-bottom: 2px solid #515647;
 }
 .menu {
   position: fixed;
-  top: 3.5%;
-  right: 3.5%;
+  top: 10%;
+  right: 5%;
   width: 70px;
   height: 70px;
   background: rgba(0,0,0,0.5);
@@ -120,8 +121,9 @@ nav li:hover {
   outline: none;
 }
 .openmenu {
-  width: 93%;
+  width: 90%;
   height: 100%;
+  overflow-y: scroll;
   background: #FFF;
   border: 2px solid transparent;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
