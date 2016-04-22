@@ -313,6 +313,6 @@ p {
   }
   .illuright {right: 20%; top: 40%;}
   button {font-size: 14px;}
-  nav ul {font-size: 14px;}
-  nav li {margin: 10px auto;}
+  nav ul {font-size: 14px; margin: 5px auto;}
+  nav li {padding: 0px 0px; margin: 5px auto;}
 }
