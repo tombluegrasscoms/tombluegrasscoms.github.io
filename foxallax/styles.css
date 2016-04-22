@@ -81,7 +81,7 @@ p {
   section { width: 100%; padding: 75px 0px;}
   p, .sectionwrap {max-width: 90%;}
   .head {
-    height: 100vh;
-    line-height: 100vh;
+    height: 50vh;
+    line-height: 50vh;
   }
 }
