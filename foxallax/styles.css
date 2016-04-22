@@ -80,4 +80,8 @@ p {
 @media all and (max-width: 840px) {
   section { width: 100%; padding: 75px 0px;}
   p, .sectionwrap {max-width: 90%;}
+  .head {
+    height: 100vh;
+    line-height: 100vh;
+  }
 }
