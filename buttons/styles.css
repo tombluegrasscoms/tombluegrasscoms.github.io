@@ -1055,7 +1055,7 @@ text-shadow: 0px 0px 100px rgba(14, 14, 14, 0.2);
 .span_1_of_2 {
 	width: 49%;
 }
-@media all and (max-width: 720px) {
+@media all and (max-width: 640px) {
   section {
   max-width: 85%;
   }
