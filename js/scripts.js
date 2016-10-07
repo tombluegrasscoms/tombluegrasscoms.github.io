@@ -32,35 +32,7 @@ $('a').click(function() {
     });
     return false;
 });
-enquire.register("screen and (min-width: 1023px)", {
-    match: function() {
-        (function() {
-            var parallax = document.querySelectorAll(".parallax"),
-                speed = 0.38;
-            window.onscroll = function() {
-                [].slice.call(parallax).forEach(function(el, i) {
-                    var windowYOffset = window.pageYOffset,
-                        elBackgrounPos = "0 " + (windowYOffset * speed) + "px";
-                    el.style.backgroundPosition = elBackgrounPos;
-                });
-            };
-        })();
-    },
-    unmatch: function() {
-        (function() {
-            var parallax = document.querySelectorAll(".parallax"),
-                speed = 0;
-            window.onscroll = function() {
-                [].slice.call(parallax).forEach(function(el, i) {
-                    var windowYOffset = window.pageYOffset,
-                        elBackgrounPos = "0 " + (windowYOffset * speed) + "px";
-                    el.style.backgroundPosition = elBackgrounPos;
-                });
-            };
-        })();
-    }
-});
-var mainbottom = $('h3').offset().top + $('h3').height();
+var mainbottom = $('h1').offset().top + $('h1').height();
 $(window).on('scroll',function(){
     var stop = Math.round($(window).scrollTop());
     if (stop > mainbottom) {
